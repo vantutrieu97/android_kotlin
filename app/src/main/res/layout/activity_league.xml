@@ -92,13 +92,14 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/nextBtn"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/swoosh_button"
+        android:onClick="leagueNextClicked"
         android:text="@string/next"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
