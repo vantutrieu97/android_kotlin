@@ -54,36 +54,39 @@
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <ToggleButton
-            android:id="@+id/toggleButton"
+            android:id="@+id/menLeagueBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
             android:layout_marginTop="8dp"
             android:background="@drawable/swoosh_toggle"
+            android:onClick="onMenBtnClicked"
             android:text="@string/mens"
             android:textColor="@android:color/white"
             android:textOff="@string/mens"
             android:textOn="@string/mens" />
 
         <ToggleButton
-            android:id="@+id/toggleButton2"
+            android:id="@+id/womanLeagueBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
             android:layout_marginTop="8dp"
             android:background="@drawable/swoosh_toggle"
-            android:text="@string/woman"
+            android:onClick="onWomanBtnClicked"
+            android:text="@string/women"
             android:textColor="@android:color/white"
-            android:textOff="@string/woman"
-            android:textOn="@string/woman" />
+            android:textOff="@string/women"
+            android:textOn="@string/women" />
 
         <ToggleButton
-            android:id="@+id/toggleButton4"
+            android:id="@+id/coedLeagueBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
             android:layout_marginTop="8dp"
             android:background="@drawable/swoosh_toggle"
+            android:onClick="onCoedClicked"
             android:text="@string/co_ed"
             android:textColor="@android:color/white"
             android:textOff="@string/co_ed"
