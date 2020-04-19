@@ -12,7 +12,7 @@
     <string name="welcome_description">Find a team in your city and dominate the league</string>
     <string name="get_started">Get started</string>
     <string name="i_am_a">I am a:</string>
-    <string name="girl">GIRL</string>
-    <string name="boy">BOY</string>
+    <string name="beginer">BEGINER</string>
+    <string name="baller">BALLER</string>
     <string name="finish">Finish</string>
 </resources>
