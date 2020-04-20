@@ -2,7 +2,6 @@ package vantutrieu97.myandroidtourapplication.controller
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_skill.*
@@ -16,7 +15,23 @@ class SkillActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_skill)
         player = intent.getParcelableExtra(EXTRA_PLAYER)
-        Log.i("EXTRA_LEAGUE", "$player")
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putParcelable(EXTRA_PLAYER, player)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        player = savedInstanceState.getParcelable(EXTRA_PLAYER)!!
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        player.skill = ""
+        ballerSkillBtn.isChecked = false
+        beginnerSkillBtn.isChecked = false
     }
 
 
