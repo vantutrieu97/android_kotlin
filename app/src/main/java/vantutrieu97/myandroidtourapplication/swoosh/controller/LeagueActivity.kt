@@ -29,7 +29,7 @@ class LeagueActivity : BaseActivity() {
 
     override fun onRestart() {
         super.onRestart()
-        player.league=""
+        player.league = ""
         menLeagueBtn.isChecked = false
         womanLeagueBtn.isChecked = false
         coedLeagueBtn.isChecked = false
