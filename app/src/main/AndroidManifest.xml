@@ -9,10 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".swag.controller.MainSwagActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         //swoosh
-        <activity android:name=".swoosh.controller.FinishActivity"></activity>
+        <activity android:name=".swoosh.controller.FinishActivity" />
         <activity android:name=".swoosh.controller.SkillActivity" />
         <activity android:name=".swoosh.controller.BaseActivity" />
         <activity android:name=".swoosh.controller.WelcomeActivity">
