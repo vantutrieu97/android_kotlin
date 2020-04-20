@@ -9,18 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".controller.FinishActivity"></activity>
-        <activity android:name=".controller.SkillActivity" />
-        <activity android:name=".controller.BaseActivity" />
-        <activity android:name=".controller.WelcomeActivity">
+
+
+        //swoosh
+        <activity android:name=".swoosh.controller.FinishActivity"></activity>
+        <activity android:name=".swoosh.controller.SkillActivity" />
+        <activity android:name=".swoosh.controller.BaseActivity" />
+        <activity android:name=".swoosh.controller.WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".controller.LeagueActivity" />
-        <activity android:name=".controller.MainActivity">
+        <activity android:name=".swoosh.controller.LeagueActivity" />
+        <activity android:name=".swoosh.controller.MainActivity">
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->

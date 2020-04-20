@@ -1,4 +1,4 @@
-package vantutrieu97.myandroidtourapplication.controller
+package vantutrieu97.myandroidtourapplication.swoosh.controller
 
 import android.content.Intent
 import android.os.Bundle

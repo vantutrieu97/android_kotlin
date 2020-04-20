@@ -1,11 +1,11 @@
-package vantutrieu97.myandroidtourapplication.controller
+package vantutrieu97.myandroidtourapplication.swoosh.controller
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_finish.*
 import vantutrieu97.myandroidtourapplication.R
-import vantutrieu97.myandroidtourapplication.Utilities.EXTRA_PLAYER
-import vantutrieu97.myandroidtourapplication.model.Player
+import vantutrieu97.myandroidtourapplication.swoosh.Utilities.EXTRA_PLAYER
+import vantutrieu97.myandroidtourapplication.swoosh.model.Player
 
 class FinishActivity : AppCompatActivity() {
 

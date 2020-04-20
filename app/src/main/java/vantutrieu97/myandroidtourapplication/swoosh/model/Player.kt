@@ -1,4 +1,4 @@
-package vantutrieu97.myandroidtourapplication.model
+package vantutrieu97.myandroidtourapplication.swoosh.model
 
 import android.os.Parcel
 import android.os.Parcelable

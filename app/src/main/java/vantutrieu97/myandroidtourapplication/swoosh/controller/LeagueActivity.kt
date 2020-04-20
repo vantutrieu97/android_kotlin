@@ -1,4 +1,4 @@
-package vantutrieu97.myandroidtourapplication.controller
+package vantutrieu97.myandroidtourapplication.swoosh.controller
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,8 +6,8 @@ import android.view.View
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_league.*
 import vantutrieu97.myandroidtourapplication.R
-import vantutrieu97.myandroidtourapplication.Utilities.EXTRA_PLAYER
-import vantutrieu97.myandroidtourapplication.model.Player
+import vantutrieu97.myandroidtourapplication.swoosh.Utilities.EXTRA_PLAYER
+import vantutrieu97.myandroidtourapplication.swoosh.model.Player
 
 class LeagueActivity : BaseActivity() {
     var player = Player("", "")
