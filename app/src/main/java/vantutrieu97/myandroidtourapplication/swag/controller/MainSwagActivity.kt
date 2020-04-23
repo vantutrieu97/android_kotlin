@@ -1,7 +1,8 @@
 package vantutrieu97.myandroidtourapplication.swag.controller
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main_swag.*
 import vantutrieu97.myandroidtourapplication.R
 import vantutrieu97.myandroidtourapplication.swag.adapter.CategoryAdapter
@@ -15,5 +16,14 @@ class MainSwagActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main_swag)
         adapter = CategoryAdapter(this, DataService.categories)
         categoryListView.adapter = adapter
+        categoryListView.setOnItemClickListener { parent, view, position, id ->
+            run {
+                Toast.makeText(
+                    this,
+                    "You was clicked $position",
+                    Toast.LENGTH_LONG
+                ).show()
+            }
+        }
     }
 }
