@@ -19,7 +19,7 @@ class CategoryRecycleAdapter(
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
-        val view = LayoutInflater.from(context).inflate(R.layout.category_list_item, null)
+        val view = LayoutInflater.from(context).inflate(R.layout.category_list_item, parent, false)
         return Holder(view, itemClick)
     }
 
@@ -34,8 +34,8 @@ class CategoryRecycleAdapter(
 
     inner class Holder(itemView: View, val itemClick: (Category) -> Unit) :
         RecyclerView.ViewHolder(itemView) {
-        val categoryImage = itemView.findViewById<ImageView>(R.id.backgroundImg)
-        val categoryTitle = itemView.findViewById<TextView>(R.id.titleTxt)
+        val categoryImage = itemView.findViewById<ImageView>(R.id.categoryImageImg)
+        val categoryTitle = itemView.findViewById<TextView>(R.id.categoryNameTxt)
         fun bindCategory(category: Category, context: Context) {
             val resourceId =
                 context.resources.getIdentifier(category.image, "mipmap", context.packageName)

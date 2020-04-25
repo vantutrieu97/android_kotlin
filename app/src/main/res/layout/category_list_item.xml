@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/backgroundImg"
+        android:id="@+id/categoryImageImg"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="0dp"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -17,16 +16,16 @@
         app:srcCompat="@mipmap/shirtimage" />
 
     <TextView
-        android:id="@+id/titleTxt"
+        android:id="@+id/categoryNameTxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/muli_bold"
         android:text="@string/background_image"
-        android:textAlignment="textEnd"
+        android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="@+id/backgroundImg"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/backgroundImg"
         app:layout_constraintStart_toStartOf="@+id/backgroundImg"
-        app:layout_constraintTop_toTopOf="@+id/backgroundImg" />
+        app:layout_constraintTop_toTopOf="@+id/categoryImageImg" />
 </androidx.constraintlayout.widget.ConstraintLayout>

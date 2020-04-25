@@ -28,7 +28,7 @@ class MainSwagActivity : AppCompatActivity() {
             )
             startActivity(productActivity)
         }
-        categoryListView.adapter = adapter
+        productsListview.adapter = adapter
 //        categoryListView.setOnItemClickListener { parent, view, position, id ->
 //            run {
 //                Toast.makeText(
@@ -40,7 +40,7 @@ class MainSwagActivity : AppCompatActivity() {
 //        }
 
         val layoutManager = LinearLayoutManager(this)
-        categoryListView.layoutManager = layoutManager
-        categoryListView.setHasFixedSize(true)
+        productsListview.layoutManager = layoutManager
+        productsListview.setHasFixedSize(true)
     }
 }
