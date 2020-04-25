@@ -39,7 +39,7 @@ object DataService {
         Product("Kickflip Studios", "18", "shirt5"),
         Product("Devslopes Badge Light Gray", "$20", "shirt2"),
         Product("Devslopes Logo Shirt Red", "$22", "shirt3"),
-        Product("Devslopes Hustle", "$22", "shirt4"),
+        Product("Devslopes Hustle", "$22", "shirt4")
     )
     val digitalGood = listOf<Product>()
     fun getProducts(category: String): List<Product> {
